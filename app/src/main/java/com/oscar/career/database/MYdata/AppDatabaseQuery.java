@@ -12,7 +12,7 @@ public interface AppDatabaseQuery {
     @Insert
     public void insertStudentData(Student s);
 
-    @Query("SELECT * FROM Student")
+    @Query("SELECT * FROM student")
     public List<Student> getStudentData();
 
     @Query("UPDATE Student SET student_name=:newName WHERE student_rollNo=:enroll")

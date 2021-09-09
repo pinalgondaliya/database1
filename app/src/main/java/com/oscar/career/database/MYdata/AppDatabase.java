@@ -7,7 +7,7 @@ import androidx.room.InvalidationTracker;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
 
-@Database(version = 1,entities = Student.class)
+@Database(version = 1,entities = {Student.class})
 public abstract class AppDatabase extends RoomDatabase {
 
     public abstract AppDatabaseQuery getAppQueries();

@@ -11,10 +11,10 @@ public class Student {
     int pKey;
 
     @ColumnInfo(name = "student_rollNo")
-    int enrollNo;
+    public int enrollNo;
 
     @ColumnInfo(name = "student_name")
-    String name;
+    public String name;
 
     public Student(int enrollNo,String name){
         this.enrollNo = enrollNo;
